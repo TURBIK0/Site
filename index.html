@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТурбоРекомендователь</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        a {
+            display: block;
+            color: red;
+            font-size: 30px;
+            /* border: calc(4px/2) dashed; */
+            width: fit-content;
+            padding: 5px;
+        }
+        *{
+            font-family: "Great Vibes", cursive;
+            font-weight: 1000;
+            font-style: normal;
+            color: white;
+            -webkit-text-stroke: 0.0001px black;
+            }
+        .utupItem{
+            border: 1px solid white;
+            width: fit-content;
+            display: inline-block;
+        }
+        iframe{
+            display: block;
+        }
+        .vidos{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .vidos video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .blokich{
+            width: 1525px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Турбик Рекомендует!</h1>
+    <h2>Лучшее от Турбика</h2>
+
+    <div class="vidos">
+        <video autoplay muted loop>
+            <source src="vidos.mp4" type="video/mp4">
+        </video>
+    </div>
+    <a href="https://www.youtube.com/" target="_blank">Ютуп</a>
+
+    <div class="blokich">
+        <div class="utupItem">
+            <iframe width="500" height="315" src="https://www.youtube-nocookie.com/embed/li18QhBiKLk?si=MZpVEoAiflvQjIwI&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="utupItem">
+            <iframe width="500" height="315" src="https://www.youtube-nocookie.com/embed/li18QhBiKLk?si=MZpVEoAiflvQjIwI&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="utupItem">
+            <iframe width="500" height="315" src="https://www.youtube-nocookie.com/embed/li18QhBiKLk?si=MZpVEoAiflvQjIwI&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
